@@ -1,18 +1,19 @@
 import 'package:equatable/equatable.dart';
 
-class BookModel extends Equatable {
+// ignore: must_be_immutable
+class BooksModel extends Equatable {
   final String urlImg;
   final String appLargeText;
   final String appSmallerText;
 
-  BookModel({
+  BooksModel({
     required this.urlImg,
     required this.appLargeText,
     required this.appSmallerText,
   });
 
-  List<BookModel> bookModel = [
-    BookModel(
+  List<BooksModel> bookModel = [
+    BooksModel(
       urlImg: 'assets/blogs/3.jpg',
       appLargeText: 'The Story of the Bible',
       appSmallerText: 'Baraka G. Minja',
